@@ -1,3 +1,3 @@
 pulbic static viod main(String[]args){
-gogo
+gogo  xxxxx
 }
