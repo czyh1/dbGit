@@ -1,0 +1,26 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+
+
+<h1>Hello ${name ?: 'guest'}!</h1>
+<h2>Hello ${pwd ?: 'guest'}!</h2>
+<a href="@{Application.index()}">Back to form</a>
+
+
+<h3>list 列表</h3>
+<ul>
+#{list bids}
+    <li>
+        索引：${_index}  姓名:${_?.name}    密码${_?.pwd}
+    </li>
+#{/list}
+</ul>
+
+
+
+<h4>list2 列表</h4>
+#{list items:bids, as:'user'}
+<li>索引：${user_index} 序号: ${user.id}  姓名${user.name} and  ${user.pwd}</li>
+#{/list}
+
