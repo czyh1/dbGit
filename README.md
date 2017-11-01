@@ -1,2 +1,0 @@
-# dbGit
-my test git
