@@ -72,5 +72,13 @@ public class Application extends Controller {
     public static void exeJob() {
         new MyJob().now();
     }
+    public static void session()
+    {
+        Account acc=new Account();
+        List<JPABase> all = acc.findAll();
+        renderArgs.put("acc",all);
+       // session.put("acc",all);
+        render();ss
+    }
 
 }
